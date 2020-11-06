@@ -71,10 +71,14 @@
   <Sequence DisplayName="InvoiceExtraction" sap:VirtualizedContainerService.HintSize="376,618" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arrCollectPDF" />
-      <Variable x:TypeArguments="x:String" Default="C:\Users\hari.krishnamorri\Desktop\test\InvoiceExtractionPOC_BOT1\Input" Name="strPathPdffiles" />
+      <Variable x:TypeArguments="x:String" Name="strPathPdffiles">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\Users\hari.krishnamorri\Desktop\test\InvoiceExtractionPOC_BOT1\InvoiceExtraction\Input</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="strExcelPath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\Users\hari.krishnamorri\Desktop\test\InvoiceExtractionPOC_BOT1\OutPut\Extracted Invoice Details.xlsx</Literal>
+          <Literal x:TypeArguments="x:String">C:\Users\hari.krishnamorri\Desktop\test\InvoiceExtractionPOC_BOT1\InvoiceExtraction\OutPut\Extracted Invoice Details.xlsx</Literal>
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="sd:DataTable" Name="BuildDataTable" />
@@ -93,7 +97,11 @@
           <Literal x:TypeArguments="x:String">Hi, Please find attached invoice Details</Literal>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="x:String" Name="strFromAccountName" />
+      <Variable x:TypeArguments="x:String" Name="strFromAccountName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">hari.krishnamorri@infosys.com</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
