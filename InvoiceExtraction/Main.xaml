@@ -70,7 +70,7 @@
       <Variable x:TypeArguments="x:String" Default="harikrishnamorri7@gmail.com" Name="ToAccountName" />
       <Variable x:TypeArguments="x:String" Default="Invoice Details" Name="strSubject" />
       <Variable x:TypeArguments="x:String" Default="Hi, Please find attached invoice Details" Name="strBody" />
-      <Variable x:TypeArguments="x:String" Default="hari.krishnamorri@infosys.com" Name="strFromAccountName" />
+      <Variable x:TypeArguments="x:String" Default="harikrishna77.java@outlook.com" Name="strFromAccountName" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
